@@ -1,0 +1,94 @@
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(4, 18, 48, 0.603);
+}
+
+.Riddles {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spinner_6kVp {
+  transform-origin: center;
+  animation: spinner_irSm .75s infinite linear
+}
+
+@keyframes spinner_irSm {
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.riddle {
+  background-color: rgba(4, 18, 48, 0.297);
+  width: 470px;
+  border-radius: 5px;
+  padding: 25px 25px 30px;
+}
+
+.question,
+.answer {
+  display: flex;
+  align-items: center;
+}
+
+.btnContainer {
+  margin-top: 10px;
+}
+
+.answer {
+  margin-top: 10px;
+}
+
+.show{
+  border: none;
+  background: none;
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 8px #ffffff;
+}
+
+.btn {
+  color: #000000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(12, 120, 55);
+}
+
+@keyframes spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn:hover {
+  color: hsl(150, 100%, 66%);
+  animation: spin2 0.7s linear infinite;
+}
+
+@keyframes spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
